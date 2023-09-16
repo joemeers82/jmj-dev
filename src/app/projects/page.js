@@ -3,7 +3,7 @@ import projectsPageQuery from "../../../lib/queries/ProjectsQuery";
 export default async function Page({ params }) {
   const projectsPage = await projectsPageQuery();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 md:p-20">
       {projectsPage.projects.edges.map((block, i) => {
         return (
           <div

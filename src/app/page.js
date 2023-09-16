@@ -6,7 +6,7 @@ export default async function Home() {
   const html = homePage.pages.edges[0].node.blocks[0].dynamicContent;
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20">
+    <main className="flex min-h-screen flex-col items-center justify-between p-12 md:p-20">
       {homePage.pages.edges[0].node.blocks.map((block, i) => {
         return (
           <div
