@@ -1,6 +1,6 @@
 # [Your Name]'s Personal Website
 
-This repository contains the source code for [Your Name]'s personal website, built using Next.js and fetching content from a WordPress instance hosted on WPEngine.
+This repository contains the source code for Joe Meers Jankowski's personal website, built using Next.js and fetching content from a WordPress instance hosted on WPEngine.
 
 ## Preview
 
@@ -10,7 +10,6 @@ This repository contains the source code for [Your Name]'s personal website, bui
 
 - **Next.js**: The React framework for building efficient and interactive user interfaces.
 - **WordPress Backend**: Using WordPress as a headless CMS to manage and deliver the website content.
-- **Responsive Design**: Ensures a seamless experience across different device sizes.
 
 ## Development
 

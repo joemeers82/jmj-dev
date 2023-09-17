@@ -82,6 +82,8 @@ module.exports = {
     "bg-blue-500",
     "text-white",
     "py-2",
+    "w-[4.5rem]",
+    "h-[4.5rem]",
     "px-4",
     "hover:bg-blue-600",
     "transition",
