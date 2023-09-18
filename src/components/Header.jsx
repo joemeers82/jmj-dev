@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import halloweenImg from "../../public/halloween.png";
+import halloweenImg from "../../public/assets/halloween.png";
 import Image from "next/image";
 
 export default function Header() {
