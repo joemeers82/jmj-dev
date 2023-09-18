@@ -1,4 +1,3 @@
-// "use client";
 import projectsPageQuery from "../../../lib/queries/ProjectsQuery";
 import Image from "next/image";
 import Link from "next/link";
