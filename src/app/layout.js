@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <Script
-          strategy="async"
           src="https://www.googletagmanager.com/gtag/js?id=G-VWGPNRPYK3"
+          strategy="async"
         />
         <Script id="google-analytics">
           {`
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={poppins.className}>
         <Header></Header>
+
         {children}
       </body>
     </html>
