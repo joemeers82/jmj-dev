@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero({ props }) {
-  console.log(props);
   return (
     <section class="w-full max-w-7xl mx-auto p-6">
       <div class="flex flex-col-reverse md:flex-row my-10">
