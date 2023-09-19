@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Hero({ props }) {
   return (
-    <section class="w-full max-w-7xl mx-auto p-6">
-      <div class="flex flex-col-reverse md:flex-row my-10">
-        <div class="w-full md:w-1/2 mb-8 md:mb-5 flex flex-col md:items-start">
-          <h1 class="font-medium text-4xl mt-4 text-left mb-5 md:text-5xl">
+    <section className="w-full max-w-7xl mx-auto p-6">
+      <div className="flex flex-col-reverse md:flex-row my-10">
+        <div className="w-full md:w-1/2 mb-8 md:mb-5 flex flex-col md:items-start">
+          <h1 className="font-medium text-4xl mt-4 text-left mb-5 md:text-5xl">
             {props.block_data.data.hero_heading}
           </h1>
           <p
@@ -16,7 +16,7 @@ export default function Hero({ props }) {
             }}
           />
 
-          <div class="flex justify-center md:justify-start mt-8 items-center gap-4">
+          <div className="flex justify-center md:justify-start mt-8 items-center gap-4">
             <Link
               className="text-blue-500 hover:underline mr-4"
               href={props.block_data.data.github_url.url}
@@ -52,7 +52,7 @@ export default function Hero({ props }) {
           </div>
         </div>
 
-        <div class="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
+        <div className="w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
           <Image
             className="rounded-wacky border object-cover h-[350px] w-[350px]"
             src={props.block_image}
