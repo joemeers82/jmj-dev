@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Link from "next/link";
 import halloweenImg from "../../public/assets/halloween.png";
 import Image from "next/image";
