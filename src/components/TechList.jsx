@@ -10,7 +10,7 @@ export default function TechList({ className, props }) {
   return (
     <>
       <section
-        className={`${className} w-full flex flex-col mx-auto max-w-7xl p-6 md:flex-row justify-center md:my-20`}
+        className={`${className} w-full flex flex-col mx-auto max-w-7xl p-6 md:flex-row justify-center md:my-20 md:mb-0`}
       >
         <div className="justify-center items-center text-3xl flex w-full text-center md:text-left md:w-80 mr-5 md:border-r">
           <p className="w-full">{data.list_heading}</p>
