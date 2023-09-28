@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Oleo_Script, Poppins } from "next/font/google";
 import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 import Script from "next/script";
@@ -18,12 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-VWGPNRPYK3"
-          strategy="async"
         />
-        <Script id="google-analytics">
-          {`
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag() {
             dataLayer.push(arguments);
@@ -31,8 +32,9 @@ export default function RootLayout({ children }) {
           gtag("js", new Date());
     
           gtag("config", "G-VWGPNRPYK3");
-        `}
-        </Script>
+        `,
+          }}
+        />
       </head>
       <body className={poppins.className}>
         <Header></Header>
