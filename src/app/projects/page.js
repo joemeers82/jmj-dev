@@ -6,7 +6,7 @@ export default async function Page({ params }) {
   const projectsPage = await projectsPageQuery();
   return (
     <>
-      <h2 className="pt-28 text-xl font-bold text-center">Projects</h2>
+      <h2 className="pt-28 text-4xl font-bold text-center">Projects</h2>
       <main className="flex flex-col max-w-7xl mx-auto md:grid grid-cols-3 gap-9 p-10 md:p-20">
         {projectsPage.map((project, i) => {
           const data = project.project_data.data;

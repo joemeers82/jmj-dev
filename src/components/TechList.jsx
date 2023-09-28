@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function TechList({ props }) {
+export default function TechList({ className, props }) {
   const data = props.block_data.data;
 
   const techIcons = Object.entries(data)
@@ -9,7 +9,9 @@ export default function TechList({ props }) {
 
   return (
     <>
-      <section className="flex flex-col mx-auto max-w-7xl p-6 md:flex-row justify-center md:my-20">
+      <section
+        className={`${className} w-full flex flex-col mx-auto max-w-7xl p-6 md:flex-row justify-center md:my-20`}
+      >
         <div className="justify-center items-center text-3xl flex w-full text-center md:text-left md:w-80 mr-5 md:border-r">
           <p className="w-full">{data.list_heading}</p>
         </div>
