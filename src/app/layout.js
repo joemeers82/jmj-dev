@@ -38,13 +38,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Header></Header>
 
         {children}
-        <script
+        <div
           dangerouslySetInnerHTML={{
             __html: `
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7RP95G6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-
-            `,
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7RP95G6" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
       </body>
