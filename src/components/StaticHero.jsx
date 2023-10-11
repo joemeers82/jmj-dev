@@ -1,0 +1,61 @@
+"use client";
+import { useEffect, useState } from "react";
+import GetInTouch from "./GetInTouch";
+
+export default function StaticHero() {
+  useEffect(() => {
+    const textWrappers = document.querySelectorAll(".anime .letters");
+
+    textWrappers.forEach((wrapper) => {
+      wrapper.innerHTML = wrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+    });
+
+    anime.timeline({ loop: false }).add({
+      targets: ".anime .letter",
+      scale: [0, 1],
+      duration: 900,
+      elasticity: 400,
+      delay: (el, i) => 40 * (i + 1),
+    });
+  }, []);
+
+  return (
+    <>
+      <section id="intro-page" className="py-8  sm:py-14">
+        <div className=" flex flex-col lg:justify-center text-center w-fit p-0 lg:p-4  mx-auto">
+          <h2 className="anime break-all relative h2 font-semibold text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-snug md:leading-normal">
+            <span className="letters block xl:inline">Hi! {`I'm`}</span>
+
+            <span className="letters font-poppins text-violet-400"> Joe </span>
+            <span className="letters">Meers </span>
+
+            <span className="letters block md:block lg:inline">Jankowski</span>
+
+            <p className="leading-tight sm:leading-snug md:leading-normal">
+              <span className="letters">Full Stack</span>
+              <span className="letters max-[500px]:block lg:inline font-poppins text-violet-400 ">
+                {" "}
+                Developer{" "}
+              </span>
+            </p>
+          </h2>
+
+          <p className="text-base sm:text-lg mt-5 md:text-xl lg:max-w-[80%] mx-auto">
+            My <span className="text-violet-400">favorite tech</span>{" "}
+            {`includes
+            JavaScript (Next.js and Gatsby), TailwindCSS, and Node.js, as well
+            as building Web APIS with CMS's like Strapi`}
+          </p>
+
+          <GetInTouch
+            classList="blueShadow mx-auto my-10 lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
+            text="Get in touch &rarr;"
+          />
+        </div>
+      </section>
+    </>
+  );
+}

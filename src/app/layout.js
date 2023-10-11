@@ -1,8 +1,14 @@
 import "./globals.css";
 import { Inter, Oleo_Script, Poppins } from "next/font/google";
-import Header from "@/components/Header";
+// import Header from "@/components/wp/Header";
+import StaticHeader from "@/components/StaticHeader";
 const inter = Inter({ subsets: ["latin"] });
+// import Head from "next/head";
 import Script from "next/script";
+import GTM from "@/components/GTM";
+import ParticleBackground from "@/components/ParticleBackground";
+import Footer from "@/components/Footer";
+
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
   style: ["normal", "italic"],
@@ -19,31 +25,24 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+          integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-VWGPNRPYK3"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N7RP95G6');
-            `,
-          }}
-        />
-      </head>
-      <body className={poppins.className}>
-        <Header></Header>
+        ></script>
 
+        <GTM />
+      </head>
+      <body
+        data-sveltekit-preload-data="hover"
+        className={`bg-slate-950 text-white relative ${poppins.className}`}
+      >
+        {/* <Header></Header> */}
+        <StaticHeader />
         {children}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7RP95G6" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          }}
-        />
+        <Footer />
+        <ParticleBackground />
       </body>
     </html>
   );

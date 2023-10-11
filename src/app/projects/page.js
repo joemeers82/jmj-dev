@@ -9,13 +9,13 @@ export default async function Page({ params }) {
       <h2 className="pt-28 text-3xl md:text-4xl font-bold text-center">
         Projects
       </h2>
-      <main className="flex flex-col max-w-7xl mx-auto md:grid grid-cols-3 gap-9 p-10 md:p-20 ">
+      <main className="flex flex-col max-w-7xl mx-auto md:grid grid-cols-2 gap-9 p-10 md:p-20 ">
         {projectsPage.map((project, i) => {
           const data = project.project_data.data;
           return (
             <article
               key={i}
-              className="w-full p-4 bg-gray-100 shadow-md rounded-lg flex flex-col h-full "
+              className="w-full p-4 bg-gray-100 text-slate-900 shadow-md rounded-lg flex flex-col h-full "
             >
               <div className="flex flex-col space-y-4 h-full justify-around ">
                 <Image

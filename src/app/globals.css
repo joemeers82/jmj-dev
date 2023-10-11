@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  color: black;
+html {
+  scroll-behavior: smooth;
+}
+
+.blueShadow {
+  box-shadow: 0px 14px 55px rgba(109, 40, 217, 0.45);
+}
+
+.anime .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
 }
