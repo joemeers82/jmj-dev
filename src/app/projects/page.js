@@ -1,7 +1,7 @@
 import projectsPageQuery from "../../../lib/queries/ProjectsQuery";
 import Image from "next/image";
 import Link from "next/link";
-
+import ContactForm from "@/components/ContactForm";
 export default async function Page({ params }) {
   const projectsPage = await projectsPageQuery();
   return (
@@ -83,6 +83,7 @@ export default async function Page({ params }) {
           );
         })}
       </main>
+      <ContactForm />
     </>
   );
 }

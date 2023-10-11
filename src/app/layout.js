@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 export const metadata = {
   title: "Joe Meers Jankowski",
-  description: "Joe Meers Jankowski web development personal site",
+  description: "Joe Meers Jankowski, Full Stack Web Developer",
 };
 
 export default function RootLayout({ children }) {
