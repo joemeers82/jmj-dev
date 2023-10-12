@@ -41,9 +41,9 @@ export default function StaticHeader() {
       }
     >
       <h1 className="font-medium">
-        <Link href="/">
+        <a href="/">
           <strong className="font-bold poppins">Joe </strong> Meers Jankowski
-        </Link>
+        </a>
       </h1>
       {!isProjects && (
         <div className="sm:flex items-center gap-4 hidden">
