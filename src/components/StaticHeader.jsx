@@ -3,17 +3,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import GetInTouch from "./GetInTouch";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 export default function StaticHeader() {
-  const pathname = usePathname();
-  const [isProjects, setIsProjects] = useState(
-    pathname === "/projects" ? true : false
-  );
+  // const pathname = usePathname();
+  // const [isProjects, setIsProjects] = useState(
+  //   pathname === "/projects" ? true : false
+  // );
 
-  useEffect(() => {
-    setIsProjects(pathname === "/projects" ? true : false);
-  }, [pathname]);
+  // useEffect(() => {
+  //   setIsProjects(pathname === "/projects" ? true : false);
+  // }, [pathname]);
   let [y, setY] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -45,20 +45,20 @@ export default function StaticHeader() {
           <strong className="font-bold poppins">Joe </strong> Meers Jankowski
         </Link>
       </h1>
-      {!isProjects && (
-        <div className="sm:flex items-center gap-4 hidden">
-          <Link href="#projects" className="duration-200 hover:text-violet-400">
-            <p>Projects</p>
-          </Link>
-          <Link
-            href="#about"
-            className="duration-200 hover:text-violet-400"
-            // onClick={(e) => scrollTo(e, "about")}
-          >
-            <p>About Me</p>
-          </Link>
-        </div>
-      )}
+      {/* {!isProjects && ( */}
+      <div className="sm:flex items-center gap-4 hidden">
+        <Link href="#projects" className="duration-200 hover:text-violet-400">
+          <p>Projects</p>
+        </Link>
+        <Link
+          href="#about"
+          className="duration-200 hover:text-violet-400"
+          // onClick={(e) => scrollTo(e, "about")}
+        >
+          <p>About Me</p>
+        </Link>
+      </div>
+      {/* )} */}
       <GetInTouch
         classList="blueShadow cursor-pointer relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950 "
         text="Get in touch "
