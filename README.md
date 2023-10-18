@@ -6,7 +6,7 @@ This repository contains the source code for Joe Meers Jankowski's personal webs
 
 ![joemeersjankowski.com](./jmjwebsite.png)
 
-![JoeMeersJankowski.com](https://joemeersjankowski.com)
+[joemeersjankowski.com](https://joemeersjankowski.com)
 
 ## Features
 
