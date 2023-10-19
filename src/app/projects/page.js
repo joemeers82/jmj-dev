@@ -12,20 +12,23 @@ export default async function Page({ params }) {
       <main className="flex flex-col max-w-7xl mx-auto md:grid grid-cols-2 gap-9 p-10 md:p-20 ">
         {projectsPage.map((project, i) => {
           const data = project.project_data.data;
+
           return (
             <article
               key={i}
               className="w-full p-4 bg-gray-100 text-slate-900 shadow-md rounded-lg flex flex-col h-full "
             >
               <div className="flex flex-col space-y-4 h-full justify-around ">
-                <Image
-                  src={project.project_image}
-                  width={260}
-                  height={175}
-                  alt={data.project_title}
-                  className="mx-auto rounded-t-lg mb-3"
-                  style={{ objectFit: "contain" }}
-                />
+                {project.project_image && (
+                  <Image
+                    src={project.project_image}
+                    width={260}
+                    height={175}
+                    alt={data.project_title}
+                    className="mx-auto rounded-t-lg mb-3"
+                    style={{ objectFit: "contain" }}
+                  />
+                )}
                 <div>
                   <h1 className="text-xl text-left mb-3">
                     {data.project_title}
