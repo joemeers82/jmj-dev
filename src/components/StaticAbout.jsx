@@ -39,7 +39,7 @@ export default function StaticAboutMe() {
             <p>{`Over the past few years I've enjoyed delving into modern CMS architecture, building Web APIs`}</p>
           </div>
         </div>
-        <div className="flex gap-6 sm:gap-8">
+        {/* <div className="flex gap-6 sm:gap-8">
           <p className="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
             3
           </p>
@@ -49,7 +49,7 @@ export default function StaticAboutMe() {
             </h3>
             <p>{`I'm always learning, diving into new technologies and strategies to keep my development skills up-to-date and versatile.`}</p>
           </div>
-        </div>
+        </div> */}
         <div className="flex gap-6 sm:gap-8">
           <p className="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
             4
