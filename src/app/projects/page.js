@@ -6,9 +6,13 @@ export default async function Page({ params }) {
   const projectsPage = await projectsPageQuery();
   return (
     <>
-      <h2 className="pt-28 text-3xl md:text-4xl font-bold text-center">
+      <h1 className="pt-28 text-3xl md:text-4xl font-bold text-center">
         Projects
-      </h2>
+      </h1>
+      <h3 className="my-3 text-center leading-tight sm:leading-snug md:leading-normal">
+        <span className="poppins text-violet-400">Note: </span> this page is
+        under development
+      </h3>
       <main className="flex flex-col max-w-7xl mx-auto md:grid grid-cols-2 gap-9 p-10 md:p-20 ">
         {projectsPage.map((project, i) => {
           const data = project.project_data.data;

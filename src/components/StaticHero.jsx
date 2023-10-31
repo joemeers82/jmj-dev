@@ -26,7 +26,7 @@ export default function StaticHero() {
     <>
       <section id="intro-page" className="py-8  sm:py-14">
         <div className=" flex flex-col lg:justify-center text-center w-fit p-0 lg:p-4  mx-auto">
-          <h2 className="anime break-all relative h2 font-semibold text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-snug md:leading-normal">
+          <h1 className="anime break-all relative h2 font-semibold text-4xl sm:text-5xl md:text-6xl leading-tight sm:leading-snug md:leading-normal">
             <span className="letters block xl:inline">Hi! {`I'm`}</span>
 
             <span className="letters font-poppins text-violet-400"> Joe </span>
@@ -41,13 +41,11 @@ export default function StaticHero() {
                 Developer{" "}
               </span>
             </p>
-          </h2>
+          </h1>
 
           <p className="text-base sm:text-lg mt-5 md:text-xl lg:max-w-[80%] mx-auto">
-            My <span className="text-violet-400">favorite tech</span>{" "}
-            {`includes
-            JavaScript (Next.js and Gatsby), TailwindCSS, and Node.js, as well
-            as building Web APIS with CMS's like Strapi`}
+            I'm a <span className="text-violet-400">full stack developer</span>{" "}
+            {`from the San Francisco Bay Area. I'm passionate about building modern, scalable web applications with a focus on the front-end.`}
           </p>
 
           <GetInTouch

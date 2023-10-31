@@ -2,9 +2,7 @@ export default function StaticProjects() {
   return (
     <section className="py-20 lg:py-32 flex flex-col gap-24" id="projects">
       <div className="flex flex-col gap-2 text-center">
-        <h6 className="text-large sm:text-xl md:text-2xl">
-          A few of my creative endeavors.
-        </h6>
+        <h6 className="text-large sm:text-xl md:text-2xl">Front-Endeavors.</h6>
         <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
           Curious to <span className="poppins text-violet-400">see</span> my
           work?
