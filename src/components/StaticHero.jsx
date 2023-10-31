@@ -44,7 +44,7 @@ export default function StaticHero() {
           </h1>
 
           <p className="text-base sm:text-lg mt-5 md:text-xl lg:max-w-[80%] mx-auto">
-            I'm a <span className="text-violet-400">full stack developer</span>{" "}
+            I am a <span className="text-violet-400">full stack developer</span>{" "}
             {`from the San Francisco Bay Area. I'm passionate about building modern, scalable web applications with a focus on the front-end.`}
           </p>
 
