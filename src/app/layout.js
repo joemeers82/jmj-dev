@@ -1,10 +1,11 @@
 import "./globals.css";
 import { Inter, Oleo_Script, Poppins } from "next/font/google";
 // import Header from "@/components/wp/Header";
+
 import StaticHeader from "@/components/StaticHeader";
 const inter = Inter({ subsets: ["latin"] });
 // import Head from "next/head";
-import Script from "next/script";
+
 import GTM from "@/components/GTM";
 import ParticleBackground from "@/components/ParticleBackground";
 import Footer from "@/components/Footer";
@@ -24,14 +25,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-          integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-          async
-        ></script>
-
         <GTM />
       </head>
       <body

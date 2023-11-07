@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import GetInTouch from "./GetInTouch";
-
+import Script from "next/script";
+import anime from "animejs/lib/anime.es.js";
 export default function StaticHero() {
   useEffect(() => {
     const textWrappers = document.querySelectorAll(".anime .letters");
@@ -13,6 +14,7 @@ export default function StaticHero() {
       );
     });
 
+    // if (anime !== undefined) {
     anime.timeline({ loop: false }).add({
       targets: ".anime .letter",
       scale: [0, 1],
@@ -20,6 +22,7 @@ export default function StaticHero() {
       elasticity: 400,
       delay: (el, i) => 40 * (i + 1),
     });
+    // }
   }, []);
 
   return (
